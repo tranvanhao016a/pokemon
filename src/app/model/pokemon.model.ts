@@ -1,10 +1,22 @@
-export interface PokemonModel{
+export interface PokemonModel {
   name: string;
   order: number;
-  sprites: Sprites;
+  sprites: {
+    back_default: string;
+  };
+
 }
 
-export interface Sprites{
 
-  back_default: string;
-}
+  // types: [
+  //   {
+  //     type: {
+  //       name: string;
+  //     };
+  //   },
+  //   {
+  //     type: {
+  //       name: string;
+  //     };
+  //   },
+  // ];

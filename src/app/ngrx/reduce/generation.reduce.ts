@@ -14,6 +14,6 @@ export const generationReducer = createReducer(
   on(getGeneration, state => ({...state, loading: true})),
   on(getGenerationSuccess, (state,
                            {pokemon_species}) =>
-    ({...state, pokemon_species: pokemon_species, loading: false})),
+    ({...state, pokemon_species, loading: false})),
   on(getGenerationFailure, (state, {error}) => ({...state, error: error, loading: false}))
 );
